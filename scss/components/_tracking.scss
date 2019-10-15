@@ -1,0 +1,104 @@
+.tracking{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .tracking-content{
+        @include container-content;
+        .traking-wrapper{
+            margin: 0 -10px;
+            @media only screen and (max-width:$mobile){
+                margin: 0;
+            }
+        }
+        .tracking-wrapper-content {
+            position: relative;
+            display: inline-block;
+            width: 25%;
+            padding: 0 10px;
+            margin-left: -2px;
+            @media only screen and (max-width:$mobile){
+                width: 100%;
+            } 
+            img {
+                width: 100%;
+                @media only screen and (max-width:$mobile){
+                    display: block;
+                }
+            }
+            .title{
+                position: absolute;
+                top: 188px;
+                z-index: 9;
+                left: 30px;
+                max-width: 400px;
+                font-size: 20px;
+                line-height:22px; 
+                color: white;
+                font-weight: normal;
+                @media only screen and (max-width:$tablet){
+                    top:130px ;
+                    left: 14px;
+                    font-size: 18px;
+                    max-width: inherit;
+                    text-align: center;
+                }
+                @media only screen and (max-width:$mobile){
+                    position: static;
+                    margin: 0;
+                    background-color:$l-blue;
+                    padding: 0;
+                    display: block;
+                    vertical-align: top;
+                    margin-bottom: 10px;
+                    max-width: inherit;
+                    text-align: center;
+                }  
+            }
+        }
+        .tracking-wrapper-content-center{
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            padding: 0 10px;
+            margin-left: -3px;
+            @media only screen and (max-width:$mobile){
+                width: 100%;
+            } 
+            img {
+                width: 100%;
+                @media only screen and (max-width:$mobile){
+                    display: block;
+                }
+            }
+            .title{
+                position: absolute;
+                top: 175px;
+                z-index: 9;
+                left: 75px;
+                max-width: 400px;
+                font-size: 28px;
+                line-height:32px; 
+                color: white;
+                font-weight: normal;
+                @media only screen and (max-width:$tablet){
+                    top: 80px;
+                    left: 190px;
+                    max-width: inherit;
+                    text-align: center;
+                }
+                @media only screen and (max-width:$mobile){
+                    position: static;
+                    margin: 0;
+                    background-color:$l-blue;
+                    padding: 0;
+                    display: block;
+                    vertical-align: top;
+                    margin-bottom: 10px;
+                    max-width: inherit;
+                    text-align: center;
+                }
+                
+            } 
+        }
+    }
+}

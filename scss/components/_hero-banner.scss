@@ -1,0 +1,106 @@
+#main{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 40px;
+    @media only screen and (max-width:$mobile){
+        margin-top: 10px;
+    }
+    .main-slider {
+        width: 100%;
+        @include container-content;
+    }
+    .main-img{
+        position: relative;
+        @media only screen and (max-width:$mobile){
+            padding: 6px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        .heading{
+            position: absolute;
+            top: 53px;
+            z-index: 9;
+            left: 30px;
+            max-width: 400px;
+            @media only screen and (max-width:$mobile){
+                position: static;
+                margin: 0;
+                background-color:$l-blue;
+                padding: 0;
+                display: block;
+                vertical-align: top;
+                max-width: inherit;
+                text-align: center;
+            }
+            }
+            h1{
+                font-size: calc(14px + 22px);
+                line-height:40px; 
+                color: white;
+                .green{
+                    display: inline-block;
+                    color: $green;
+                }
+                @media only screen and (max-width:$tablet){
+                    font-size: 26px;
+                    line-height: 16px;
+                }
+                @media only screen and (max-width:$mobile){
+                    font-size: 16px;
+                    line-height: 10px;
+                    margin: 0;
+                    padding-top: 5px;
+                }
+            }
+            p{
+                font-size: 24px;
+                line-height:26px; 
+                color: white;
+                margin-bottom: 50px;
+                @media only screen and (max-width:$mobile){
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-bottom: 20px;
+                }
+            }
+            .btn{
+                background-color: #c92e86;
+                font-size: 24px;
+                padding: 12px 24px;
+                color: white;
+                font-weight: bold;
+                margin: 0 5px;
+                border-radius: 10px;
+                @media only screen and (max-width:$tablet){
+                    font-size: 20px;
+                }
+                @media only screen and (max-width:$mobile){
+                    font-size: 12px;
+                    padding: 12px 14px;
+                }
+            }
+            .second-img{
+                margin: 65px 0px;
+                width: 60%;
+                @media only screen and (max-width:$tablet){
+                    margin: 0 auto;
+                    width: 40%;
+                    margin-top: 20px;
+                    text-align: center;
+                    display: block;
+                }
+                @media only screen and (max-width:$tablet){
+                    margin: 0 auto;
+                    width: 40%;
+                    margin-top: 20px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+        }  
+
+    }

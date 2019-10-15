@@ -1,0 +1,60 @@
+.widgets{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 20px; 
+    .fitness-section{
+        @include container-content;
+        .section-wrapper{
+            margin: 0 -10px;
+            @media only screen and (max-width:$mobile){
+                margin: 0;
+            }
+            .section-list {
+                position: relative;
+                display: inline-block;
+                width: 50%;
+                padding: 0 10px;
+                margin-left: -2px;
+                @media only screen and (max-width:$mobile){
+                    width: 100%;
+                } 
+                img {
+                    width: 100%;
+                    @media only screen and (max-width:$mobile){
+                        display: block;
+                    }
+                }      
+                .title{
+                    position: absolute;
+                    top: 175px;
+                    z-index: 9;
+                    left: 75px;
+                    max-width: 400px;
+                    font-size: 24px;
+                    line-height:28px; 
+                    color: white;
+                    font-weight: normal;
+                    @media only screen and (max-width:$tablet){
+                        top: 118px;
+                        left: 21px;
+                        font-size: 22px;
+                        max-width: inherit;
+                        text-align: center;
+                    }
+                    @media only screen and (max-width:$mobile){
+                        position: static;
+                        margin: 0;
+                        background-color:$l-blue;
+                        padding: 0;
+                        display: block;
+                        vertical-align: top;
+                        padding: 0;
+                        margin-bottom: 10px;
+                        max-width: inherit;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

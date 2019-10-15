@@ -1,0 +1,228 @@
+#header {
+    background-color: #005fad;
+    width: 100%;
+    #wrapper {
+      margin: 0 auto;
+      @include container-content;
+      .slogan {
+        float: left;
+        max-width: 100%;
+        @media only screen and (max-width:$mobile){
+            display: block;
+            margin: 0 auto;
+            float: none;
+            text-align: center;
+        }
+        }
+        .menu-btn{
+            display: none;
+            @media only screen and (max-width:$mobile){
+                display: block;
+                padding-bottom: 10px;
+                .menu{
+                    display: block;
+                    width: 35px;
+                    height: 5px;
+                    background-color: white;
+                    margin: 6px 6px;
+                }
+            }
+        }
+      .top-nav {
+          text-align: center;
+          @media only screen and (max-width:$tablet){
+              overflow: hidden;
+          }
+          @media only screen and (max-width:$mobile){
+            position: relative;
+            display: none;
+            &.active{
+                display: block;
+            }
+          }
+            .left-nav {
+                position: relative;
+                float: left;
+                @media only screen and (max-width:$tablet){
+                    position: static;
+                }
+                .nav {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 8px 5px;
+                @media only screen and (max-width:$tablet){
+                    padding: 8px 0;
+                }
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    @media only screen and (max-width:$tablet){
+                        margin: 0;
+                        position: relative;
+                    }
+                    @media only screen and (max-width:$mobile){
+                        display: block;
+                        width: 100%;
+                        float: left;
+                        text-align: left;
+                    }
+                }
+                a {
+                    color: white;
+                    padding: 0 5px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+                    @media only screen and (max-width:$tablet){
+                        font-size: 10px;
+                    }   
+                    @media only screen and (max-width:$mobile){
+                        font-size: 14px;
+                    }   
+                }
+                }
+                li:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    background-color: white;
+                    width: 1px;
+                    margin-right: 5px;
+                    @media only screen and (max-width:$tablet){
+                        top: -16px;
+                        bottom: -16px;
+                    }
+                    @media only screen and (max-width:$mobile){
+                        display: none;
+                    }
+
+                }
+                .nav li:first-child:before {
+                    display: none;
+                }
+            }
+        }
+            .form {
+              display: inline-block;
+              background-color: #2680c1;
+              border-radius: 5px;
+              @media only screen and (max-width:$tablet){
+                margin-left: 10px;
+                float: left;
+              }
+              @media only screen and (max-width:$mobile){
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+              }
+              .input {
+                background-color: #2680c1;
+                font: 100% Arial, Helvetica, sans-serif;
+                vertical-align: middle;
+                color:$white;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                width: 250px;
+                height: 33px;
+                padding-left: 5px;
+                @media only screen and (max-width:$tablet){
+                    width: 155px;
+                }
+                @media only screen and (max-width:$mobile){
+                    font-size: 14px;
+                    width: 90%;
+                    text-align: center;
+                }  
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                    opacity: 1; /* Firefox */
+                }
+                
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: white;
+                }
+                
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: white;
+                }
+              }
+              .search {
+                overflow: hidden;
+                float: right;
+                border-radius: 5px;
+                .fa {
+                  display: inline-block;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: 30px;
+                  color: white;
+                  direction: rtl;
+                }
+              }
+            }
+        .right-nav{
+            vertical-align: middle;
+            float: right;
+            padding: 7px 6px;
+            @media only screen and (max-width:$mobile){
+                position: relative;
+              }
+            @media only screen and (max-width:$mobile){
+                display: block;
+                float: none;
+                padding-bottom: 40px;
+            }
+            .nav {
+                margin: 0;
+                padding: 0px 5px;
+                @media only screen and (max-width:$mobile){
+                    padding: 0;
+                }
+                li {
+                display: inline-block;
+                @media only screen and (max-width:$mobile){
+                    text-align: left;
+                    width: 100%;
+                    padding: 0;
+                }
+                }
+                a {
+                color: white;
+                padding: 0 5px;
+                text-decoration: none;
+                font-size: 14px;
+                font-style: normal;
+                font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+                @media only screen and (max-width:$tablet){
+                    font-size: 10px;
+                }
+                @media only screen and (max-width:$mobile){
+                    padding: 0;
+                    font-size: 14px;
+                }   
+            }
+            li:before {
+                content: "";
+                /* padding: 0 0px 0 8px; */
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                background-color: white;
+                width: 1px;
+                margin-right: 5px;
+                @media only screen and (max-width:$mobile){
+                    display: none;
+                }
+            }
+            .nav li:first-child:before {
+              display: none;
+            }
+        }
+    }
+}
+}

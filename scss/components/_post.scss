@@ -1,0 +1,100 @@
+.post{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .post-wrapper{
+        @include container-content;
+        .post-content{
+            margin: 0 0;
+            margin-bottom: 20px;
+            .post-wrapper-content{
+                padding: 6px;
+                display: block;
+                @media only screen and (max-width:$mobile){
+                    width: 100%;
+                } 
+                img {
+                    width: 100%;
+                }
+                .title{
+                    font-size: 12px;
+                    line-height:20px; 
+                    color: #005fad;
+                    font-weight: normal;
+                    margin-right:5px;
+                    @media only screen and (max-width:$mobile){
+                        width: 100%;
+                        margin: 4px 15px;
+                        max-width: inherit;
+                    }
+                p{
+                    @media only screen and (max-width:$tablet){
+                        margin-left: 5px;
+                    }  
+                }       
+                }
+                h3{
+                    font-size: 14px;
+                    line-height:16px; 
+                    color: #005fad;
+                    margin: 4px 0;
+                    @media only screen and (max-width:$mobile){
+                        width: 100%;
+                        margin: 4px 15px;
+                        max-width: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .post-content-video{
+        display: block;
+        height: auto;
+        .post-wrapper-video{
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            margin-left: -3px;
+            @media only screen and (max-width:$mobile){
+                width: 100%;
+            }
+            .play{
+                position: relative;
+                img{
+                    width: 100%;
+                    padding: 5px 15px;
+                    &.player {
+                        position: absolute;
+                        bottom: 15px;
+                        left: 0px;
+                        padding: 0 30px;
+                    }
+                }
+            }
+            .title{
+                max-width: 400px;
+                font-size: 12px;
+                line-height:20px; 
+                color: #005fad;
+                font-weight: normal;
+                margin: 0 18px;
+                @media only screen and (max-width:$tablet){
+                    font-size: 14px;
+                    margin: 0 22px;
+                    max-width: inherit;
+                }
+            }
+            h3{
+                font-size: 14px;
+                max-width: 400px;
+                line-height:24px; 
+                color: #005fad;
+                margin: 0 18px;
+                @media only screen and (max-width:$tablet){
+                    margin: 0 22px;
+                }
+            }
+        }
+    }
+}

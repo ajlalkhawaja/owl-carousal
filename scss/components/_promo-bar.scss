@@ -1,0 +1,57 @@
+.promo{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f99d1c;
+    .promo-bar{
+        @include container-content;
+        .left-bar{
+            display: inline-block;
+            text-align: left;
+            width: 50%;
+            @media only screen and (max-width:$mobile){
+                width: 100%;
+                margin: 0 0px;
+                padding: 0px 18px;
+            }
+            i{
+                font-size: 18px;
+            }
+            p{
+                display: inline-block;
+                margin: 10px 5px;
+                font-size: 12px;     
+                &.sep {
+                    &:after {
+                        content: ' | ';
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+        .right-bar{
+            display: inline-block;
+            text-align: right;
+            width: 49%;
+            @media only screen and (max-width:$mobile){
+                width: 100%;
+                padding: 0 4px;
+            }
+            
+        i{
+            font-size: 18px;
+        }
+        p{
+            display: inline-block;
+            margin: 10px 5px;
+            font-size: 12px;     
+            &.sep {
+                &:after {
+                    content: ' | ';
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}    
+}
